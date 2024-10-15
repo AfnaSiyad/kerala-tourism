@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+  <title>Kerala Tourism</title>
+</head>
+
+<body>
+  <!-- header and banner  starts here -->
+  <div class="banner-carousel">
+   
+      <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg  bg-transparent">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="https://www.keralatourism.org/images/kt/kerala-tourism-title.png?d=18122017" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div>
+               <div class="d-block d-xxl-flex flex-row-reverse">
+                <div class="visit-date text-end mb-2">
+                  <span class="text-white">Visits since 1 Apr 2024 5,664,745 Visits since 1 Jan 2007 47,526,334</span>
+                </div>
+                <div class="navbar-social-icons text-end mb-2 d-none d-xl-block">
+                  <ul>
+                    <li>
+                      <a href="#" id="utube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="fb">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="insta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="whatspp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                          <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="pinterest">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" id="linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+               </div>
+                <div>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">EXPERIENCE KERALA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">WHERE TO GO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">WHERE TO STAY</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">THINGS TO DO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">PLAN YOUR TRIP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">TRAVEL CARE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">E NEWSLETTER</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                  </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+
+       
+      </header>
+
+
+    
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.keralatourism.org/images/banner/desktop/tvm1-1920x650_(1).jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.keralatourism.org/images/banner/desktop/ashtamudi_lake.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.keralatourism.org/images/banner/desktop/pata-19201.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.keralatourism.org/images/banner/desktop/banner_malarickal_1920.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- hneader and banner ends here -->
+  <!-- conttent starts here -->
+  <div class="experience-kerala container">
+    <div>
+      <h2>Experience Kerala</h2>
+    </div>
+    <div class="container text-center my-3">
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="keralaExp-Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active gap-1">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Theyyam2.jpg" class="img-fluid">
+                    <div class="overlay-text" id="bg-kannur">
+                      <div class="text">Welcome to Kannur, a city that boasts of a vibrant tapestry of history, culture, tradition and natural beauty. </div>
+                    </div>
+                  </div>
+                  <div class="card-img-overlay">KANNUR</div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item gap-1">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/homecontentimage/desktop/judaisam13.jpg" class="img-fluid">
+                    <div class="overlay-text" id="bg-judaism">
+                      <div class="text">Judaism is an ethnic religion comprising the collective religious, cultural and legal tradition and civilization of the Jewish people. </div>
+                    </div>
+                  </div>
+                  <div class="card-img-overlay">JUDAISM IN KERALA</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item gap-1">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/homecontentimage/desktop/ecotourism.jpg" class="img-fluid">
+                    <div class="overlay-text" id="bg-ecotourism">
+                      <div class="text">Welcome to the official website of Eco Adventure Tourism in Kerala. A trip to swooningly picturesque places that are also silent, serene, slow-moving is what travelers to the Kerala always looks for is there.</div>
+                    </div>
+                  </div>
+                  <div class="card-img-overlay">ECOTOURISM</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item gap-1">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Kerala_Cuisine1.jpg" class="img-fluid">
+                    <div class="overlay-text" id="bg-kappa">
+                      <div class="text">Recipe of Kappa and Fish Curry, the anytime popular combination dish of Kerala</div>
+                    </div>
+                  </div>
+                  <div class="card-img-overlay">KAPPA AND FISH CURRY</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item gap-1">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/homecontentimage/desktop/RT-2.jpg" class="img-fluid">
+                    <div class="overlay-text" id="bg-touriismMission">
+                      <div class="text">RT Mission is the nodal agency formed by the Government of Kerala to spread and implement the ideologies and initiatives of Responsible Tourism all over the State. </div>
+                    </div>
+                  </div>
+                  <div class="card-img-overlay">RESPONSIBLE TOURISM MISSION</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item gap-1">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/homecontentimage/desktop/yoga5.jpg" class="img-fluid">
+                    <div class="overlay-text" id="bg-yoga">
+                      <div class="text">An exclusive website to know What is Yoga and how Yoga can change your life</div>
+                    </div>
+                  </div>
+                  <div class="card-img-overlay">YOGA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev bg-transparent w-aut" href="#keralaExp-Carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next bg-transparent w-aut" href="#keralaExp-Carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>		
+    </div>
+    <div class="more-exp-btn">
+      <a href="#">FIND MORE EXPERIENCES <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="top-destinations">
+    <div class="text-center">
+      <h2>Top Destinations</h2>
+    </div>
+    <div class="container">
+      <div class="destinations">
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/thekkekudi_cave_temple2.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Thekkekudi Cave Temple</span>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/museum_of_kerala_history1.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Museum of Kerala History</span>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/kalamandalam2.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Kerala Kalamandalam</span>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Kuthampully1.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Kuthampully Handloom Village</span>
+          </div>
+        </div>
+      </div>
+      <div class="destinations mt-1">
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/kunhimangalam1.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Kunhimangalam</span>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/mannar2.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Mannar</span>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/vyloppilli-samakrithi-bhavan1.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Vyloppilli Samskrithi Bhavan</span>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/MANNANAM-2.jpg" alt="">
+          <div class="caption-bottom">
+            <span>Mannanam</span>
+          </div>
+        </div>
+      </div>
+      <div class="explore-destination-btn">
+        <a href="#">EXPLORE OUR DESTINATIONS <i class="fas fa-angle-right"></i>
+        </a>
+      </div>
+    </div>   
+  </div>
+
+  <div class="things-kerala">
+     <div>
+      <h2>Things to do in Kerala</h2>
+     </div>
+     <div class="container">
+      <div class="things gap-4">
+        <div class="thing">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Screw-Pine-Weaving1.jpg" alt="">
+          <div class="thing-bottom-text">
+            <span>Responsible Tourism</span>
+          </div>
+        </div>
+        <div class="thing">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/ayurveda6.jpg" alt="">
+          <div class="thing-bottom-text">
+            <span>Ayurveda</span>
+          </div>
+        </div>
+        <div class="thing">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Paragliding.jpg" alt="">
+          <div class="thing-bottom-text">
+            <span>Paragliding</span>
+          </div>
+        </div>
+       </div>
+       <div class="things gap-4 mt-4">
+        <div class="thing">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/A-Journey-through-the-Forest.jpg" alt="">
+          <div class="thing-bottom-text">
+            <span>A journey through the forest</span>
+          </div>
+        </div>
+        <div class="thing">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/scuba-diving1.jpg" alt="">
+          <div class="thing-bottom-text">
+            <span>Scuba Diving</span>
+          </div>
+        </div>
+        <div class="thing">
+          <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Hiking.jpg" alt="">
+          <div class="thing-bottom-text">
+            <span>Hiking</span>
+          </div>
+        </div>
+       </div>
+       <div class="more-activity-btn">
+        <a href="#">FIND MORE ACTIVITIES <i class="fas fa-angle-right"></i>
+        </a>
+      </div>
+     </div>
+     
+  </div>
+
+  <div class="whatsNew container">
+    <h2>What's New</h2>
+    <div class="row mt-5 newses">
+      <div class="col news">
+        <ul>
+          <li>
+            <a href="#">
+              Invited applications for the appointment of Temporary Staffs at Guest House and Yatri Nivas on contract basis
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Domestic Partnership Meets 2024-25
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col news">
+        <ul>
+          <li>
+            <a href="#">
+              DTPC Kozhikode invites QCBS for Leasing, Operation and Maintenance of Chaliyam Beach, Kiosks and Restaurant            </a>
+          </li>
+          <li>
+            <a href="#">
+              International Trade Fairs and B2B Meets | August 2024 - March 2025            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="more-news-btn">
+      <a href="#">MORE NEWS <i class="fas fa-angle-right"></i></a>
+    </div>
+  </div>
+
+  <div class="kerala-events">
+    <div>
+      <h2>What's happening</h2>
+    </div>
+    <div class="container text-center my-3">
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/20190918105229_237_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 1</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/20181108082213_233_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 2</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/20180911085109_374_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 3</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/20131114160650_76_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 4</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/20131104154113_18_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 5</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/illuminated_vettucadu_church20191123072939_333_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 6</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/20171222121635_329_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 6</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/20181120052525_351_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 6</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="https://www.keralatourism.org/images/festivals/home-thumb/niranam_valiyapally_perunnal20220107071321_399_1.jpg" class="img-fluid">
+                  </div>
+                  <div class="card-img-overlay">Slide 6</div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <a class="carousel-control-prev bg-transparent w-aut" href="#eventsCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next bg-transparent w-aut" href="#eventsCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+      <div class="more-events-btn">
+        <a href="#">MORE FESTIVALS AND EVENTS <i class="fas fa-angle-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tour-packages">
+    <div class="py-5">
+      <h2>
+        Tour Packages
+      </h2>
+      <p>
+        STOP. Breathe. Slow down. Embrace life. It’s time for Kerala! 
+        <br>
+        
+Plan your trip with amazing offers and packages.
+      </p>
+    </div>
+    <div class="packages container">
+      <div class="row gap-1">
+        <div class="col position-relative">
+          <img src="https://www.keralatourism.org/images/homecontentimage/entire-kerala.jpg" alt="">
+          <div class="caption-cost">
+            <span class="caption">Entire Kerala 
+              <small>A Journey Through Gods Own Country</small>
+            </span>
+            <span class="cost">INR 2,000 to 118,000</span>
+          </div>
+        </div>
+        <div class="col position-relative">
+          <img src="https://www.keralatourism.org/images/homecontentimage/central-kerala.jpg" alt="">
+          <div class="caption-cost">
+            <span class="caption">Central Kerala 
+              <small>Trip to the soul of kerala</small>
+            </span>
+            <span class="cost">INR 2,000 to 118,000</span>
+          </div>
+        </div>
+        <div class="col position-relative">
+          <img src="https://www.keralatourism.org/images/homecontentimage/backwater.jpg" alt="">
+          <div class="caption-cost">
+            <span class="caption">Backwater
+              <small>Through the strectes of emerald</small>
+            </span>
+            <span class="cost">INR 2,000 to 118,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="row gap-1 mt-1">
+        <div class="col position-relative">
+          <img src="https://www.keralatourism.org/images/homecontentimage/south-kerala.jpg" alt="">
+          <div class="caption-cost">
+            <span class="caption">South Kerala 
+              <small>A Journey to remember</small>
+            </span>
+            <span class="cost">INR 2,000 to 118,000</span>
+          </div>
+        </div>
+        <div class="col position-relative">
+          <img src="https://www.keralatourism.org/images/homecontentimage/hill-station.jpg" alt="">
+          <div class="caption-cost">
+            <span class="caption">Hill Station
+              <small>Explore the lust-mist hill stations</small>
+            </span>
+            <span class="cost">INR 2,000 to 118,000</span>
+          </div>
+        </div>
+        <div class="col position-relative">
+          <img src="https://www.keralatourism.org/images/homecontentimage/honeymoon.jpg" alt="">
+          <div class="caption-cost">
+            <span class="caption">Honeymoon 
+              <small>Celebrate your romance</small>
+            </span>
+            <span class="cost">INR 2,000 to 118,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="more-package-btn">
+        <a href="#">FIND MORE PACKAGES <i class="fas fa-angle-right"></i></a>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="row trip-plan">
+    <div>
+      <h2>Plan Your Trip</h2>
+    </div>
+    <div class="col">
+      <ul class="trip-icons">
+        <li>
+          <a href="#">
+            <i class="fas fa-bed fa-2x"></i>
+          </a>
+          <span class="trip-icon-caption">
+            Where to Stay
+          </span>
+       </li>
+       <li>
+        <a href="#">
+          <i class="fas fa-book-open fa-2x"></i>
+        </a>
+        <span class="trip-icon-caption">
+          E Brochures
+        </span>
+     </li>
+     <li>
+      <a href="#">
+        <i class="fas fa-plane fa-2x"></i>
+      </a>
+      <span class="trip-icon-caption">
+        Visa on Arrival
+      </span>
+   </li>
+   <li>
+    <a href="#">
+      <i class="fas fa-user fa-2x"></i>
+    </a>
+    <span class="trip-icon-caption">
+      Travel Info
+    </span>
+ </li>
+ <li>
+  <a href="#">
+    <i class="fas fa-comment-alt fa-2x"></i>
+  </a>
+  <span class="trip-icon-caption">
+    Travel Care
+  </span>
+</li>
+<li>
+  <a href="#">
+    <i class="fas fa-restroom fa-2x"></i>
+  </a>
+  <span class="trip-icon-caption">
+    Toilets
+  </span>
+</li>
+<li>
+  <a href="#">
+    <i class="fas fa-envelope-open fa-2x"></i>
+  </a>
+  <span class="trip-icon-caption">
+    E Newsletter
+  </span>
+</li>
+<li>
+  <a href="#">
+    <i class="fas fa-bed fa-2x"></i>
+  </a>
+  <span class="trip-icon-caption">
+    Yathri Nivas
+  </span>
+</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row  hotel-search">
+    <div class="col">
+      <h3>Search For Accomadation</h3>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter Keyword" >
+    </div>
+    <div class="col">
+      <button class="btn btn-success" type="submit"><i class="fas fa-search fa-1x"></i>
+
+       SEARCH</button>
+    </div>
+  </div>
+</div>
+  
+  <!-- conttent ends here -->
+   <script src="./js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

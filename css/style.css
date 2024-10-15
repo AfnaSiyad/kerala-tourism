@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.banner-carousel{
+    position: relative;
+}
+header{
+    transition: all 0.4s ease-in-out;
+}
+.header-bg{
+    background-color: rgba(0, 57, 115, 1);
+}
+.navbar{
+    position: absolute !important;
+    z-index: 1;
+    width: 100%;
+   
+}
+.navbar-brand img{
+    width: 60%;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+    
+}
+.visit-date{
+    font-family:"Quicksand", sans-serif;
+    font-size: 12px;
+
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 1vw !important;
+    padding: 0px 10px !important;
+}
+.navbar-social-icons ul{
+    list-style: none;
+    margin: 0;
+}
+.navbar-social-icons ul li{
+    display: inline-block;
+}
+.navbar-social-icons ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+   
+}
+
+#utube{
+    background-color: #ba2025;
+}
+#fb{
+    background-color: #3b5999;
+}
+#twitter{
+    background-color: #000;
+}
+#insta{
+    background-color: #5280a5;
+}
+#whatspp{
+    background-color: #189d0e;
+}
+#pinterest{
+    background-color: #E60023;
+}
+#linkedin{
+    background-color: #0e76a8;
+}
+.carousel-control-prev-icon{
+    padding: 20px;
+    background-image: url(./images/angle-circle-left_6407332.svg) !important;
+}
+.carousel-control-next-icon{
+    padding: 20px;
+    background-image: url(./images/angle-circle-right_6407340.svg) !important;
+}
+.experience-kerala{
+    margin-bottom:  4vw ;
+}
+.experience-kerala h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #036;
+    margin:2vw 0 ;
+}
+
+.experience-kerala .more-exp-btn{
+    margin: 2vw 0;
+    text-align: center;
+}
+.experience-kerala .more-exp-btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #036;
+    color: white;
+    
+}
+.more-exp-btn a:hover{
+    color: white;
+    background-color: rgb(1, 31, 60);
+}
+.card-img{
+    position: relative;
+}
+.card-img-overlay{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.7vw;
+    top: auto !important;
+    bottom: 25px !important;
+}
+.overlay-text {
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition:all .5s ease-out;
+  }
+  #bg-kannur{
+    background-color: #C30;
+  }
+  #bg-judaism{
+    background-color: #369;
+  }
+  #bg-ecotourism{
+    background-color: #e4cd05;
+  }
+  #bg-kappa{
+    background-color: #632a0f;
+  }
+  #bg-touriismMission{
+    background-color: #900;
+  }
+  #bg-yoga{
+    background-color: #060;
+  }
+.card-img:hover .overlay-text{
+    height: 100%;
+    transition:all .5s ease-out;
+
+}
+.overlay-text .text {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    width: 100%;
+    padding: 0 30px;
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.top-destinations{
+    background-color: #e3e7f1;
+}
+.top-destinations h2{
+    padding: 3vw 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #036;
+}
+
+.destinations{
+    display: flex;
+    gap: 2px;
+}
+.destination{
+    flex: 1;
+    position: relative;
+    
+}
+.destination img{
+    width: 100%;
+    
+
+}
+.caption-bottom{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.explore-destination-btn{
+    padding: 3vw 0;
+    text-align: center;
+}
+
+.explore-destination-btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #036;
+    color: white;
+    
+}
+.explore-destination-btn a:hover{
+    color: white;
+    background-color: rgb(1, 31, 60);
+}
+.things-kerala{
+    background-image: url(https://www.keralatourism.org/images/kt//bg/sky-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.things-kerala h2{
+    padding: 3vw 0;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.things{
+    display: flex;
+}
+.thing{
+    flex: 1;
+    position: relative;
+}
+.thing img{
+    width: 100%;
+}
+.thing .thing-bottom-text{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    background:  rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.more-activity-btn{
+    padding: 3vw 0;
+    text-align: center;
+}
+
+.more-activity-btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #036;
+    color: white;
+    
+}
+.more-activity-btn a:hover{
+    color: white;
+    background-color: rgb(1, 31, 60);
+}
+.whatsNew h2{
+    
+        padding: 3vw 0;
+        color: #036;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 2vw;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+}
+.whatsNew .newses{
+    margin-left:10vw ;
+    margin-right: 10vw;
+}
+.whatsNew .news ul{
+list-style: none;
+margin: 0;
+}
+.whatsNew .news ul li{
+    padding: 5px 0 5px 15px;
+    font-family:"Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+}
+.whatsNew .news ul li a{
+    text-decoration: none;
+    color: #337ab7;
+    
+}
+.whatsNew .news ul li a:hover{
+    color: #1c3952;
+}
+.more-news-btn{
+    padding: 3vw 0;
+    text-align: center;
+}
+
+.more-news-btn a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #036;
+    color: white;
+    
+}
+.more-news-btn a:hover{
+    color: white;
+    background-color: rgb(1, 31, 60);
+}
+.kerala-events{
+    background-color: #e3e7f1;
+}
+.kerala-events h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #036;
+    padding: 3.5vw 0;
+}
+.more-events-btn{
+    padding: 3vw 0;
+    text-align: center;
+}
+
+.more-events-btn a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #036;
+    color: white;
+    
+}
+.more-events-btn a:hover{
+    color: white;
+    background-color: rgb(1, 31, 60);
+}
+
+.tour-packages{
+    background-color: #e3e7f1;
+}
+.tour-packages h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #036;
+}
+.tour-packages p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px auto;
+    width: 100%;
+    color: #444;
+    font-weight: 300;
+    letter-spacing: -0.05px;
+}
+.packages .row .col{
+    padding: 0 !important;
+}
+.packages .row .col img{
+    width: 100%;
+}
+.caption-cost{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+    text-align:left;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.caption-cost .caption{
+    font-size: 1.3vw;
+    font-weight: 500;
+
+}
+.caption small{
+    display: block;
+    font-size: 0.9vw;
+    font-weight: 300;
+
+}
+.caption-cost .cost{
+    position: absolute;
+    bottom: -120px;
+    right: 20px;
+    padding: 5px 8px;
+    background-color: #900;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: 300;
+}
+
+.more-package-btn{
+    padding: 3vw 0;
+    text-align: center;
+}
+
+.more-package-btn a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #036;
+    color: white;
+    
+}
+.more-package-btn a:hover{
+    color: white;
+    background-color: rgb(1, 31, 60);
+}
+
+.trip-plan h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #036;
+    padding: 3.5vw 0;
+}
+.trip-icons{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2vw;
+
+}
+.trip-icons li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.trip-icons li a{
+    text-decoration: none;
+    padding: 35px;
+    background-color: #036;
+    border-radius: 50%;
+}
+.trip-icons li a i{
+    color: white;
+}
+.trip-icon-caption{
+    font-family:"Quicksand", sans-serif;
+    color: #036;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 3vw 0 0 0;
+    display: block;
+    text-align: center;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+}
+.hotel-search{
+    background-color: #e3e7f1;
+    text-align: center;
+    margin: 2vw auto !important;
+    padding: 20px;
+}
+.hotel-search h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 1vw 0;
+    color: #28497c;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.form-control{
+    border-radius: 0 !important;
+    min-height: 45px;
+}
+.btn{
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 10px 20px !important;
+}
+.btn-success{
+    color: #fff;
+    background-color: #5cb85c !important;
+
+}
+@media (max-width: 767px) {
+    #keralaExp-Carousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #keralaExp-Carousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+/* experience kerala carousel starts here */
+#keralaExp-Carousel .carousel-inner .carousel-item.active,
+#keralaExp-Carousel .carousel-inner .carousel-item-next,
+#keralaExp-Carousel .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    #keralaExp-Carousel .carousel-inner .carousel-item-end.active,
+    #keralaExp-Carousel .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    #keralaExp-Carousel .carousel-inner .carousel-item-start.active, 
+    #keralaExp-Carousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+#keralaExp-Carousel .carousel-inner .carousel-item-end,
+#keralaExp-Carousel .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+/* experience kerala carousel ends here */
+
+/* what happening part starts here */
+@media (max-width: 767px) {
+    #eventsCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #eventsCarousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+#eventsCarousel .carousel-inner .carousel-item.active,
+#eventsCarousel .carousel-inner .carousel-item-next,
+#eventsCarousel .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    #eventsCarousel .carousel-inner .carousel-item-end.active,
+    #eventsCarousel .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    #eventsCarousel .carousel-inner .carousel-item-start.active, 
+    #eventsCarousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+#eventsCarousel .carousel-inner .carousel-item-end,
+#eventsCarousel .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
+/* what happening part ends here */
+
+
