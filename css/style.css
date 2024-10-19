@@ -7,16 +7,12 @@
 }
 header{
     transition: all 0.4s ease-in-out;
+
 }
 .header-bg{
     background-color: rgba(0, 57, 115, 1);
 }
-.navbar{
-    position: absolute !important;
-    z-index: 1;
-    width: 100%;
-   
-}
+
 .navbar-brand img{
     width: 60%;
 }
@@ -182,6 +178,7 @@ header{
 .destinations{
     display: flex;
     gap: 2px;
+    flex-wrap: wrap;
 }
 .destination{
     flex: 1;
@@ -236,6 +233,7 @@ header{
 }
 .things{
     display: flex;
+    flex-wrap: wrap;
 }
 .thing{
     flex: 1;
@@ -289,6 +287,7 @@ header{
 .whatsNew .news ul{
 list-style: none;
 margin: 0;
+padding: 0;
 }
 .whatsNew .news ul li{
     padding: 5px 0 5px 15px;
@@ -320,6 +319,9 @@ margin: 0;
     color: white;
     background-color: rgb(1, 31, 60);
 }
+.events{
+    flex-wrap: wrap;
+}
 .kerala-events{
     background-color: #e3e7f1;
 }
@@ -330,6 +332,57 @@ margin: 0;
     text-align: center;
     color: #036;
     padding: 3.5vw 0;
+}
+.card{
+    border-radius: 0 !important;
+    border: none !important;
+    cursor: pointer;
+}
+.card-img-top{
+    border-radius: 0 !important;
+    position: relative;
+}
+.card-img-top::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: 75%;
+    background: rgb(0, 0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    
+}
+.card-img-top:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+.card-body{
+    padding: 10px !important;
+}
+.card-body a{
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8vw;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.card-body a:hover{
+    color: #069;
+}
+.events .col{
+    padding: 0 2px !important;
 }
 .more-events-btn{
     padding: 3vw 0;
@@ -347,7 +400,34 @@ margin: 0;
     color: white;
     background-color: rgb(1, 31, 60);
 }
+.video-container .video-wrapper{
+    position: relative;
+}
+.video-container .video-overlay{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.video-container .video-overlay a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid #FFF;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
 
+
+}
+.video-container .video-overlay .sub-text{
+    display: block;
+    color: #fff;
+
+}
 .tour-packages{
     background-color: #e3e7f1;
 }
@@ -374,7 +454,10 @@ margin: 0;
 .packages .row .col img{
     width: 100%;
 }
-.caption-cost{
+
+.caption-cost .caption{
+    font-size: 1.3vw;
+    font-weight: 500;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -384,10 +467,6 @@ margin: 0;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
 
-}
-.caption-cost .caption{
-    font-size: 1.3vw;
-    font-weight: 500;
 
 }
 .caption small{
@@ -398,7 +477,7 @@ margin: 0;
 }
 .caption-cost .cost{
     position: absolute;
-    bottom: -120px;
+    bottom: 20px;
     right: 20px;
     padding: 5px 8px;
     background-color: #900;
@@ -409,6 +488,36 @@ margin: 0;
     font-weight: 300;
 }
 
+.tour-package-column{
+    position: relative;
+
+}
+.tour-package-column::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: auto;
+    width: 100%;
+    height: 75%;
+    background: rgb(0, 0, 0, 0);
+    transition: all 0.5s ease-in-out;
+
+}
+.tour-package-column:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+
+}
 .more-package-btn{
     padding: 3vw 0;
     text-align: center;
@@ -458,39 +567,229 @@ margin: 0;
     color: #036;
     font-size: 20px;
     font-weight: 400;
-    margin: 3vw 0 0 0;
+    margin: 3vw 0;
     display: block;
     text-align: center;
     letter-spacing: -0.5px;
     cursor: pointer;
 }
 .hotel-search{
+    display: flex;
     background-color: #e3e7f1;
     text-align: center;
-    margin: 2vw auto !important;
     padding: 20px;
+    justify-content: center;
 }
 .hotel-search h3{
     font-size: 18px;
     font-weight: 300;
-    margin: 1vw 0;
+    margin: 1vw 3vw;
     color: #28497c;
     font-family: 'Montserrat', sans-serif;
 
 }
+.hotel-search .hotel-input{
+padding-right: 3vw;
+}
 .form-control{
     border-radius: 0 !important;
     min-height: 45px;
+    padding: 6px 200px 6px 12px;
 }
-.btn{
+.hotel-search .btn{
     border-radius: 0 !important;
     border: none !important;
     padding: 10px 20px !important;
+}
+.hotel-search .btn:hover{
+    background-color: rgb(4, 59, 4) !important;
 }
 .btn-success{
     color: #fff;
     background-color: #5cb85c !important;
 
+}
+.explore-photo-gallery h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #036;
+    padding: 3.5vw 0;
+}
+.gallery-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item{
+    flex: 1;
+    position: relative;
+}
+.gallery-item img{
+    width: 100%;
+}
+.gallery-overlay{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, .3);;
+}
+.gallery-btn{
+    margin: 2.5vw 0;
+    text-align: center;
+}
+.gallery-btn a{
+    text-decoration: none;
+    padding: 0.7vw 1.5vw;
+    background-color: #036;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.connect-withUs h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #036;
+    padding: 3.5vw 0;
+}
+.connect-social-icons{
+    text-align: center;
+}
+.connect-social-icons ul{
+    margin: 0;
+}
+.connect-social-icons ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 14px;
+}
+.connect-social-icons ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 28px;
+    border-radius: 50%;
+}
+.stream h3{
+    font-size: 20px;
+    line-height: 1em;
+    color: #28497c;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.stream hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #a2a1a1;
+}
+
+.footer-section{
+    background-color: #e3e7f1;
+    padding: 1% 0;
+    font-family:"Quicksand", sans-serif;
+
+}
+.footer-section ul{
+    padding: 0;
+}
+.footer-section ul li{
+    list-style: none;
+}
+.footer-section ul li h3{
+    color: #036;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.footer-section ul li a{
+    text-decoration: none;
+    color: #232323;
+    font-size: 14px;
+}
+.footer-section hr{
+    margin:5px 0;
+    border-top: 2px solid #fffafa;
+}
+.subscribe-box{
+    text-align: center;
+    font-family:"Quicksand", sans-serif;
+}
+.footer-section h3{
+    font-size: 20px;
+color: #036;
+font-weight: 400;
+line-height: 20px;
+}
+.footer-section small{
+    font-size: 13px;
+    color: #777;
+
+}
+.subscribe-box .input-group .form-control{
+    padding: 0 20px;
+}
+.subscribe-btn{
+    background-color: #036;
+    color: white;
+    font-size: 12px;
+    font-family:"Quicksand", sans-serif;
+    border-radius: 0;
+    
+}
+.subscribe-btn:hover{
+    background-color: #036;
+    color: white;
+}
+
+.footer-section a{
+    text-decoration: none;
+    color: #232323;
+
+}
+.footer-section .rec-btn{
+    color: #fff;
+    border-radius: 0;
+    background-color: #bd1a48;
+    padding: 5px 15px;
+    font-size: 18px;
+    border: 2px solid #a02743;
+    margin-top: 5px;
+}
+.footer-section .rec-btn:hover{
+    background-color: #29679d;
+    border-color: #1b3d5a;
+}
+
+.assosiates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0  40px 0;
+}
+.assosiates  a img{
+    padding: 0 10px;
+}
+.credit{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    color: #666;
+    margin-bottom: 30px;
+}
+.credit a{
+    text-decoration: none;
+    color: #337ab7;;
+}
+.credit a:hover{
+    color: #036;
 }
 @media (max-width: 767px) {
     #keralaExp-Carousel .carousel-inner .carousel-item > div {
@@ -528,41 +827,165 @@ margin: 0;
 }
 /* experience kerala carousel ends here */
 
-/* what happening part starts here */
-@media (max-width: 767px) {
-    #eventsCarousel .carousel-inner .carousel-item > div {
-        display: none;
+
+@media screen and (max-width:992px) {
+    .destination{
+          flex-basis: 45%;
     }
-    #eventsCarousel .carousel-inner .carousel-item > div:first-child {
+    .top-destinations h2{
+        font-size: 3vw;
+    }
+    .thing{
+        flex-basis: 45%;
+    }
+    .newses{
         display: block;
     }
-}
-
-#eventsCarousel .carousel-inner .carousel-item.active,
-#eventsCarousel .carousel-inner .carousel-item-next,
-#eventsCarousel .carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-
-    #eventsCarousel .carousel-inner .carousel-item-end.active,
-    #eventsCarousel .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
+    .whatsNew .news ul li{
+        font-size: 1.4vw;
+    }
+    .more-news-btn a {
+        padding: 5px  20px;
+        font-size: 1.3vw;
+    }
+    .whatsNew h2{
+        font-size: 3vw;
+    }
+    .events .col{
+        flex-basis:30%;
+        margin-bottom: 5px;
+    }
+    .events .col .card .card-body a{
+        font-size: 1.2vw;
+    }
+    .video-container .video-overlay a{
+        padding: 5px 10px;
+        font-size: 2vw;
+    }
+    .video-container .video-overlay .sub-text{
+        font-size: 1.2vw;
+    }
+    .tour-package-column{
+        flex-basis: 45%;
     }
 
-    #eventsCarousel .carousel-inner .carousel-item-start.active, 
-    #eventsCarousel .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
+    .caption-cost .caption {
+        font-size: 1.7vw;
     }
+    .caption small {
+        font-size: 1.2vw;
+    }
+    .trip-icon-caption{
+        margin: 3.8vw 0;
+        font-size: 18px;
+    }
+    .trip-icons li a{
+        padding: 25px;
+        font-size: 12px;
+    }
+    .hotel-search h3 {
+        margin: 1.3vw 2vw;
+        font-size: 15px;
+    }
+    .form-control{
+        padding: 6px 142px 6px 12px;
+    }
+    .hotel-search .hotel-input {
+        padding-right: 2vw;
+    }
+    .hotel-search .btn{
+        padding: 14px 10px !important;
+        font-size: 10px;
+    }
+    .gallery-item{
+        flex-basis: 33%;
+    }
+    .connect-social-icons ul li a{
+        padding: 22px;
+        font-size: 14px;
+    }
+    .stream h3{
+        font-size: 16px;
+    }
+    .footer-section ul li h3{
+        font-size: 16px;
+    }
+    .footer-section ul li a{
+        font-size: 12px;
+    }
+    .subscribe-box h3{
+        font-size: 16px;
+    }
+    .subscribe-box h3 small{
+        font-size: 11px;
+    }
+    .footer-section h3 a{
+        font-size: 16px;
+    }
+    .credit{
+        font-size: 1.5vw;
+    }
+
 }
 
-#eventsCarousel .carousel-inner .carousel-item-end,
-#eventsCarousel .carousel-inner .carousel-item-start { 
-    transform: translateX(0);
+@media screen and (max-width:768px) {
+    .destination{
+        flex-basis: 50%;
+    }
+    .top-destinations h2{
+        font-size: 4vw;
+    }
+    .thing{
+        flex-basis: 50%;
+    }
+    .whatsNew .news ul li{
+        font-size: 1.7vw;
+    }
+    .events .col{
+        flex-basis: 50%;
+    }
+    .events .col .card .card-body a{
+        font-size: 1.8vw;
+    }
+    .tour-package-column{
+        flex-basis: 50%;
+    }
+    .caption-cost .caption {
+        font-size: 2vw;
+    }
+    .caption small {
+        font-size: 1.7vw;
+    }
+    .trip-icon-caption{
+        font-size: 15px;
+
+    }
+    .trip-plan h2{
+        font-size: 26px;
+    }
+    .hotel-search{
+        display: block;
+    }
+    .hotel-search .btn{
+        margin-top: 10px;
+        padding: 10px 20px !important;
+        font-size: 14px;
+    }
+    .gallery-overlay{
+        font-size: 14px;
+    }
+
+    .footer-section .row .col{
+        flex-basis: 30%;
+    }
+    .subscribe-box{
+        flex-basis: 80% !important;
+    }
+    .footer-section .rec-btn{
+        font-size: 14px;
+    }
+    .credit{
+        font-size: 1.8vw;
+    }
+
 }
-
-/* what happening part ends here */
-
-
